@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <hr>
+    <header>
+        <img src="../images/galaxy.png" id="galaxy">
+        <a href="#" class="logo">CosmoSmart</a>
+        <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="shop.html" target="_blank">Shop</a></li>
+            <li><a href=#>My Account</a></li>
+            <li><a href=#>My Orders</a></li>
+            <li><a href=#  class="active">Contact Us</a></li>
+            <li><a href="about.html" target="_blank">About Us</a></li>
+        </ul>
+    </header>
+    <br><br><hr>
+    <div class="container">
+        <form onsubmit="Emailquery(); reset(); return false;">
+            <h3>Reach Out To Us</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email address" required>
+            <input type="tel" id="phone" placeholder="Phone No." maxlength="10">
+            <textarea id="message" rows="4" placeholder="How Can We Help You?" required></textarea>
+            <p id="errorMessage" hidden></p>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <footer><hr><pre>© 2023 CosmoSmart. All rights reserved. | Terms of Service | Privacy Policy |                                                                                                              Designed with ❤️ by <u><b>CosmoSmart</b></u></pre></footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function Emailquery()
+        {
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "sahaj.224019@sggscc.ac.in",
+                Password : "Sketchex@224019",
+                To : 'sketchex2350@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Enquiry!!",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone Number: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                message => alert("Query Sent Successfully!!")
+                );
+        }
+
+        const form = document.querySelector('form')
+        const username = document.getElementById('name')
+        const email = document.getElementById('email')
+        const message = document.getElementById('message')
+        const errorMessage = document.getElementById("errorMessage")
+
+        form addEventListener("submit", (e) => {
+            const error = [];
+
+            if (username.value.trim() === "")
+            {
+                error.push("Please Enter Your Name!")
+            }
+
+            if (email.value.trim() === "")
+            {
+                error.push("Please Enter Your Valid Email Address!")
+            }
+
+            if (message.value.trim() === "")
+            {
+                error.push("Please Enter A Valid Query!")
+            }
+
+            if (username.value === "")
+            {
+                error.push("Name Required!")
+            }
+
+            if (email.value === "")
+            {
+                error.push("Valid Email Address Required!")
+            }
+
+            if (message.value === "")
+            {
+                error.push("Please Enter A Valid Query!")
+            }
+
+            if(errors.length > 0){
+                e.preventDefault();
+                errorMessage.toggleAttribute('hidden');
+                errorMessage.innerHTML = errors.join(', ');
+            }
+
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmoSmart.in | Your One Stop Solution for All your Shopping Needs |</title>
+    <link rel="stylesheet" type="text/css" href="../css/Styles.css">
+</head>
+<body>
+    <hr>
+    <header>
+        <img src="../images/galaxy.png" id="galaxy">
+        <a href="#" class="logo">CosmoSmart</a>
+        <ul>
+            <li><a href=# class="active">Home</a></li>
+            <li><a href="shop.html" target="_blank">Shop</a></li>
+            <li><a href=#>My Account</a></li>
+            <li><a href=#>My Orders</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+            <li><a href="about.html" target="_blank">About Us</a></li>
+        </ul>
+    </header>
+    <br><br><hr>
+    <section>
+        <img src="/Parallax/images/Night.jpg" id="Night">
+        <img src="../images/NightMoon.png" id="NightMoon">
+        <h2 id="text">Welcome to Our Store!</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="../images/City1.png" id="City">
+    </section>
+    <section class ="l1">
+    <img src="../images/Citydown.png" id="Citydown">
+    <img src="../images/Lake.jpg" id="Lake">
+    </section>
+    <div class="sec" id="sec">
+        <div>
+            <img src="../images/ecommerce.jpg"alt="E-Commerce" id="ecom">
+        </div>
+        <h2>CosmoSmart - </h2><h3>Your One Stop Solution</h3>
+        <p>Welcome to Cosmosmart, your ultimate destination for all things ecommerce! <br>We are a cutting-edge online platform that brings the cosmos of shopping right to your fingertips. <br>With an expansive collection of products and an intuitive user interface, <br>we strive to make your online shopping experience out of this world. <br>Our mission is to provide a smart and seamless shopping environment that caters to your diverse needs, <br> while delivering exceptional customer service and quality. <br>Step into the realm of Cosmosmart and embark on a stellar journey of convenience, variety, and satisfaction.</p>
+    </div>
+    <div class="sec2" id="sec2">
+        <div>
+        <img src="../images/customer.jpg"alt="E-Commerce" id="cust">
+        </div>
+        <div align="right">
+        <h3>Why Our Customers Love us?</h3>
+        <p><u><b>High-quality products</b></u>: Our customers love us for delivering exceptional quality items that <br>surpass their expectations.<br><u><b>Diverse selection</b></u>: With a wide range of options available, our customers can easily find <br>exactly what they need, from fashion to electronics and more. <br><u><b>Convenient shopping</b></u>: Our user-friendly website and intuitive interface provide a seamless <br>and enjoyable shopping experience. <br><u><b>Fast, reliable delivery</b></u>: Timely shipping ensures our customers receive their orders promptly <br>and securely. <br><u><b>Outstanding customer service</b></u>: Our dedicated support team is always available to assist <br>customers, building strong relationships based on personalized and prompt assistance. <br><u><b>Trust and transparency</b></u>: We prioritize transparency in all aspects of our business, earning <br>our customers' trust through clear product information and secure payment options.</p>
+        </div>
+    </div>
+    
+    <footer><br><br><hr><pre>© 2023 CosmoSmart. All rights reserved. | Terms of Service | Privacy Policy |                                                                                                              Designed with ❤️ by <u><b>CosmoSmart</b></u></pre></footer>
+    <hr>
+    <script>
+        let Night = document.getElementById('Night');
+        let NightMoon = document.getElementById('NightMoon');
+        let Lake = document.getElementById('Lake');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let City = document.getElementById('City');
+        let header = document.querySelector('header');
+        
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+
+            Night.style.left = value * 0.25 + 'px';
+            NightMoon.style.top = value * 1.05 + 'px';
+            City.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 5.5 + 'px';
+            btn.style.marginTop = value * 0.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            
+        })
+    </script>
+</body>
+</html>

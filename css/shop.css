@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import "./fontawesome/scss/fontawesome.scss";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100 px;
+    z-index: 10000;
+    background-color: #262841;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header img#galaxy
+{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+    margin-left: -470px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color:#fff
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+    border-radius: 20px;
+}
+
+#hero
+{
+    background: url(../images/Untitled.png);
+    height: 100vh;
+    width: 100%;
+    background-position: top 25% right 0% bottom -25%;
+    background-size: cover;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4
+{
+    padding-bottom: 15px;
+    color: #ddd;
+    font-size: 25px;
+}
+
+#hero h1
+{
+    color: #fff;
+    font-size: 45px;
+}
+
+#hero h2
+{
+    color: #aaaaaa;
+    font-size: 35px;
+}
+
+#hero p
+{
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+#hero button
+{
+    background-image: url(../images/button.png);
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    font-size: 15px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.section-p1
+{
+    padding: 40px 80px;
+}
+
+#product1
+{
+    text-align: center;
+
+}
+
+#product1 .pro-container
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top:20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro
+{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0px;
+    transition: 0.2s ease;
+    position: relative;
+
+}
+
+#product1 .pro:hover
+{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09);
+}
+
+#product1 .pro img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .desc
+{
+    text-align: start;
+    padding: 10px 0px;
+
+}
+
+#product1 .pro .desc span
+{
+    color: #767676;
+    font-size: 12px;
+}
+
+#product1 .pro .desc h5
+{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .desc i
+{
+    font-size: 12px;
+    color: rgb(243,181,25);
+}
+
+#product1 .pro .desc h4
+{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    padding-right: 2px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#map1
+{
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    float: left;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+}
+
+#map1 .map
+{
+    border: 3px solid black;
+    height: 216px;
+    width: 384px;
+    border-radius: 30px;
+}
+
+#map1 :hover
+{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09);
+}
+
+.con
+{
+    padding-right: 150px;
+    float: right;
+    border-radius: 20px;
+    mix-blend-mode:darken;
+    height: 230px;
+    width: auto;
+}
+
+footer div p
+{
+    font-size: 16px;
+}

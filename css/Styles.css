@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(#262841,#1c0522);
+    overflow-x: hidden;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100 px;
+    z-index: 10000;
+    background-color: #262841;
+}
+
+header img#galaxy
+{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+    margin-left: -470px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color:#fff
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+    border-radius: 20px;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#NightMoon
+{
+    position: relative;
+    height: 900px;
+    width: 900px;
+    top: 10px;
+    padding-left:100px ;
+
+}
+
+section img#NightSky
+{   
+    align-items: flex-start;
+    object-fit: fill;
+}
+section img#City1
+{
+    z-index: 10;
+
+}
+
+section img#Citydown
+{   
+    position: absolute;
+    z-index: 12;
+    opacity: 0.65;
+}
+section img#Lake
+{   
+    position: absolute;
+    object-fit:fill;
+    z-index: 11;
+
+}
+
+div img#ecom
+{
+    height: 317px;
+    width: 371.4px;
+    mix-blend-mode: screen;
+    float: right;
+    border-radius: 100px;
+}
+
+div img#cust
+{
+    height: 317px;
+    width: 371.4px;
+    mix-blend-mode: screen;
+    float: left;
+    border-radius: 100px;
+} 
+
+#text
+{
+    position: absolute;
+    top: 150px;
+    right: -1350px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+
+#btn
+{ 
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 12;
+    transform: translateY(250px);
+    
+}
+
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(#1c0522,#262841);
+}
+
+.sec2
+{
+    color: #fff;
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(#262841,#1c0522);
+}
+
+.sec2 h3
+{
+    font-size: 2.0em;
+    margin-bottom: 10px;
+}
+
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: -2   0px;
+    color: #fff;
+}
+.sec h3
+{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+}
+
+.l1{
+    height: 400px;
+}
+
+footer
+{
+    color: #fff;
+    background-color: #1c0522;
+    font-size: large;
+}
+
